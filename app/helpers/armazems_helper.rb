@@ -1,0 +1,2 @@
+module ArmazemsHelper
+end

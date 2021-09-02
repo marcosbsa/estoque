@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @food.titulo %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @food.marca %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @food.preco %>
+</p>
+
+<p>
+  <strong>Validade:</strong>
+  <%= @food.validade %>
+</p>
+
+<p>
+  <strong>Peso:</strong>
+  <%= @food.peso %>
+</p>
+
+<%= link_to 'Edit', edit_food_path(@food) %> |
+<%= link_to 'Back', foods_path %>

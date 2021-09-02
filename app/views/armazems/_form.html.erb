@@ -1,0 +1,52 @@
+<%= form_for @armazem, html: {multpart:true} do |form| %>
+  <% if armazem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(armazem.errors.count, "error") %> prohibited this armazem from being saved:</h2>
+
+      <ul>
+        <% armazem.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+    <div class="field">
+    <%= form.label :avatar %>
+    <%= form.file_field :avatar %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expiration %>
+    <%= form.date_select :expiration %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

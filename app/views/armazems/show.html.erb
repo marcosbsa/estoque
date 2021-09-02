@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @armazem.name %>
+</p>
+
+<p>
+  <%= image_tag @armazem.avatar.url(:medium) %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @armazem.brand %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @armazem.weight %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @armazem.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @armazem.description %>
+</p>
+
+<p>
+  <strong>Expiration:</strong>
+  <%= @armazem.expiration %>
+</p>
+
+<%= link_to 'Edit', edit_armazem_path(@armazem) %> |
+<%= link_to 'Back', armazems_path %>
